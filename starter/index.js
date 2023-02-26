@@ -4,7 +4,7 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = [
+const questions=[
 
     {
 type: "input",
@@ -40,14 +40,22 @@ message: "State the languages and technologies used in this project",
     },
 ];
 
-// function to write README file
+// writing README.md file
+
 function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
+
 
 // function to initialize program
-function init() {
-
-}
+function init(){
+    inquirer.prompt(questions).then((responses) => {
+        console.log("creating README.md file...");
+        writeToFile("./README.md", generateMarkdown({...responses}));
+    });
+    
+};
 
 // function call to initialize program
+
 init();

@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ https:"
+    "url": " git + https://github.com/WendyVsQz/Readme-generator"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "8.2.4"
   }
 }
