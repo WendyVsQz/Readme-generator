@@ -22,9 +22,7 @@ message: "describe the purpose and functionality of the project"
 type: "checkbox",
 name: "license",
 message: "Select an applicable license according to this project",
-choices: ["MIT", "Apache license 2.0", "Artistic license 2.0", "Boost software license 1.0", 
-"BSD3-clause clear license", "creative commons license family", "Eclipse public license 1.0",
-"GNU general public license v2.0", "ISC", "The Unlicense"],
+choices: ["MIT", "Apache license 2.0", "BSD 3-Clause license", "Creative commons", "Eclipse", "GNU", "IBM", "ISC"],
     },
 
     {
