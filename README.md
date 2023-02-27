@@ -1,7 +1,7 @@
 # undefined 
-![Github license](https://img.shields.io/badge/license--blue.svg)
+undefined
 ## Description
-this is readme generator
+This program generate a readme file according to the questionaire given answers
 ## Deployed Application URL
 undefined
 ## Screenshot
@@ -15,13 +15,11 @@ undefined
 * [Questions](#questions)
 ## Features
 undefined
-## Languages & Dependencies
-lastest
+## Dependencies
+Lastest
 ## How to Use This Application:
-JavaScript
+Please install the npm package required before running this program
 ## Contributors
-undefined
-## Testing
-undefined
+[![GitHub contributors](https://img.shields.io/github/1/Naereen/badges.svg)](https://GitHub.com/Naereen/badges/graphs/contributors/)
 ## Questions
-Please send your questions [here](mailto:undefined?subject=[GitHub]%20Dev%20Connect) or visit [github/undefined](https://github.com/undefined).
+wendyvasr99@hotmail.com
