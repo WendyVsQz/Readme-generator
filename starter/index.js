@@ -131,7 +131,7 @@ function init(){
                         if (err) {
                             return console.log(err);
                         }
-                    console.log("the README file was created!");
+                        console.log("the README file was created!");
                     }
                 ))
             });

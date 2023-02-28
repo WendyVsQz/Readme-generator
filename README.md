@@ -18,13 +18,12 @@ undefined
 * [Contact](#contact)
 
 ## Dependencies
-8.2.4
+Inquirer: 8.2.4
 ## How to Use This Application:
-Please install the npm package required before running this program
+Please install the npm and enquirer package before running this program
 ## Contributors
-WendyVsQz
-## Questions
+N/A
 ## License
-undefined
+This project is licensed under the terms of the:![Github license](https://img.shields.io/badge/license-${license}-blue.svg)
 ## Contact me
 wendyvasr99@hotmail.com
