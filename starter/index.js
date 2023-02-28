@@ -7,93 +7,99 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions=[
 // tittle
     {
-type: "input",
-name: "tittle",
-message: "Name project:",
-validate: function (input) {
-    if (input === "") {
-        return "Project tittle cannot be empty.";
-    } else {
-        return true;
-    }
-}
+        type: "input",
+        name: "tittle",
+        message: "Name project:",
+        validate: function (input) {
+            if (input === "") {
+                return "Project tittle cannot be empty.";
+            } else {
+                return true;
+            }
+        }
     },
-// Description
+    // Languages & technologies
     {
-type: "input",
-name: "description",
-message: "describe the purpose and functionality of the project:",
-validate: function (input) {
-    if (input === "") {
-        return "project description cannot be empty.";
-    } else {
-        return true;
-    }
-}
+        type: "checkbox",
+        name: "features",
+        message: "State the languages and frameworks used in this project:",
+        choices: ["JavaScript", "Bootstrap", "NPM", "HTML",
+        "CSS", "Angular.js", "jQuery", "React", "SASS",
+        "C++", "C#", "TypeScript", "C"],
+        validate: function(checkbox) {
+            if (checkbox.length === 0) {
+                return "Select at least one language or framework."
+            } else {
+                return true;
+            }
+        }    
     },
-// License badge
+    
     {
-type: "checkbox",
-name: "license",
-message: "Select an applicable license according to this project:",
-choices: ["MIT", "Apache license 2.0", "BSD3", 
-        "CC0", "Eclipse", "GNU", "IBM", "ISC", "None"],
+    // Description
+    type: "input",
+        name: "description",
+        message: "describe the purpose and functionality of the project:",
+        validate: function (input) {
+            if (input === "") {
+                return "project description cannot be empty.";
+            } else {
+                return true;
+            }
+        }
     },
-// Dependencies
+    
+    
+    // Dependencies
     {
-type: "input",
-name: "require",
-message: "List any project dependencies here:",
+        type: "input",
+        name: "require",
+        message: "List any project dependencies here:",
     },
-// Languages & technologies
+    
+    // Use of the application
     {
-type: "checkbox",
-name: "features",
-message: "State the languages and frameworks used in this project:",
-choices: ["JavaScript", "Bootstrap", "NPM", "HTML",
-        "CSS", "Angular.js", "jQuery", "Node.js", "React", "SASS",
-                "C++", "C#", "TypeScript", "C"],
-validate: function(checkbox) {
-    if (checkbox.length === 0) {
-        return "Select at least one language or framework."
-    } else {
-        return true;
-    }
-}    
+        type: "input",
+        name: "usage",
+        message: "Describe how to use the application:",
+        validate: function (input) {
+            if (input === "") {
+                return "usage description cannot be empty.";
+            } else {
+                return true;
+            }
+        }
     },
-// Use of the application
+    // Contributors
     {
-type: "input",
-name: "usage",
-message: "Describe how to use the application:",
-validate: function (input) {
-    if (input === "") {
-    return "usage description cannot be empty.";
-} else {
-    return true;
-    }
-}
+        type: "input",
+        name: "contributors",
+        message: "Mention the Github name of contributors:"
     },
-// Contributors
+    // Contact
     {
-type: "input",
-name: "contributors",
-message: "Mention the number of contributors:"
+        type: "input",
+        name: "contact",
+        message: "mention email:",
+        validate: function(input) {
+            if (input ==="") {
+                return "Email cannot be empty.";
+            } else {
+                return true;
+            }
+        }
     },
-// Contact
+
+    // License badge
     {
-type: "input",
-name: "contact",
-message: "mention email:",
-validate: function(input) {
-    if (input ==="") {
-        return "Email cannot be empty.";
-    } else {
-        return true;
-    }
-}
-    }
+        type: "checkbox",
+        name: "license",
+        message: "Select an applicable license according to this project:",
+        choices: ["MIT", "Apache license 2.0", "BSD3", 
+                "CC0", "Eclipse", "GNU", "IBM", "ISC", "None"],
+    },
 ];
+
 
 // writing README.md file
 
