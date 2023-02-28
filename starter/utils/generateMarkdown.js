@@ -6,7 +6,6 @@ function renderLicenseBadge(license) {
     }
   };
 
-
 //Creating a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -16,10 +15,9 @@ ${data.features}
 ## Description
 ${data.description}
 ## Deployed Application URL
-${data.link}
-## Screenshot
-![alt-text](${data.screenshot})
-
+* 
+## DEMO
+* 
 ## Table of Contents
 * [Features](#features)
 * [Description](#description)

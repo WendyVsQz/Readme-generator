@@ -5,10 +5,9 @@ JavaScript,NPM,Markdown
 ## Description
 This program generate a readme file according to the questionaire given answers
 ## Deployed Application URL
-undefined
-## Screenshot
-![alt-text](undefined)
-
+* 
+## DEMO
+* 
 ## Table of Contents
 * [Features](#features)
 * [Description](#description)
@@ -18,7 +17,7 @@ undefined
 * [Contact](#contact)
 
 ## Dependencies
-inquirer: 8.2.4
+inquire: 8.2.4
 ## How to Use This Application:
 Please install the npm and enquirer package before running this program
 ## Contributors

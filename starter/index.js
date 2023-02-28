@@ -48,8 +48,6 @@ const questions=[
             }
         }
     },
-    
-    
     // Dependencies
     {
         type: "input",
