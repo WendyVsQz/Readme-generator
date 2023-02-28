@@ -1,7 +1,7 @@
 
 # README generator 
 ## Features
-undefined
+JavaScript,NPM,Markdown
 ## Description
 This program generate a readme file according to the questionaire given answers
 ## Deployed Application URL
@@ -18,12 +18,12 @@ undefined
 * [Contact](#contact)
 
 ## Dependencies
-Inquirer: 8.2.4
+inquirer: 8.2.4
 ## How to Use This Application:
 Please install the npm and enquirer package before running this program
 ## Contributors
 N/A
 ## License
-This project is licensed under the terms of the:![Github license](https://img.shields.io/badge/license-${license}-blue.svg)
+This project is licensed under the terms of the: ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Contact me
 wendyvasr99@hotmail.com

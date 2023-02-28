@@ -24,7 +24,7 @@ const questions=[
         name: "features",
         message: "State the languages and frameworks used in this project:",
         choices: ["JavaScript", "Bootstrap", "NPM", "HTML",
-        "CSS", "Angular.js", "jQuery", "React", "SASS",
+        "CSS", "Angular.js", "jQuery", "React", "SASS","Markdown",
         "C++", "C#", "TypeScript", "C"],
         validate: function(checkbox) {
             if (checkbox.length === 0) {
